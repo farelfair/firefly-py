@@ -12,7 +12,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 # commands bot
-client = commands.Bot(command_prefix = '?', intents=intents, help_command=None)
+client = commands.Bot(command_prefix = '!', intents=intents, help_command=None)
 
 # make bot online
 @client.event

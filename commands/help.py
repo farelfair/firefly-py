@@ -9,7 +9,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
         embed = discord.Embed(
             title="Help!",
-            description="Apa yang harus saya lakukan?",
+            description="**!help** - show all list command\n**!hai** - say hi for firefly",
             color=int("303135", 16)
         )
         await ctx.reply(embed=embed, mention_author=True)
