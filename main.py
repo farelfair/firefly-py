@@ -20,7 +20,7 @@ async def on_ready():
     print("bot ready online")
     print("================")
     
-    activity = discord.Game(name="firefly see u")
+    activity = discord.Game(name="Firefly.gg | ?help")
     await client.change_presence(status=discord.Status.online, activity=activity)
     print("Custom activity sudah di-set!")
 
