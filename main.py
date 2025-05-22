@@ -19,6 +19,10 @@ client = commands.Bot(command_prefix = '?', intents=intents)
 async def on_ready():
     print("bot ready online")
     print("================")
+    
+    activity = discord.Game(name="firefly see u")
+    await client.change_presence(status=discord.Status.online, activity=activity)
+    print("Custom activity sudah di-set!")
 
 # Load commands from folder
 @client.event
