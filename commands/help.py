@@ -5,8 +5,8 @@ class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="bantuan")
-    async def bantuan(self, ctx):
+    @commands.command(name="help")
+    async def help(self, ctx):
         embed = discord.Embed(
             title="Help!",
             description="Apa yang harus saya lakukan?",
