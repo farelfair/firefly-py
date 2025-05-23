@@ -10,7 +10,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
         guild = ctx.guild
 
-        file = discord.File("firefly-py/image/embed_divider.png", filename="embed_divider.png")
+        file = discord.File("image/embed_divider.png", filename="embed_divider.png")
 
         embed = discord.Embed(
             title="List Commands",
@@ -20,7 +20,7 @@ class Help(commands.Cog):
         # field
         embed.add_field(
             name="General",
-            value="**!hai** - say hi for firefly\n**!help** - show list cmd (test)",
+            value="**!help** - show all list commands\n**!hai** -say hi for firefly",
             inline=False
         )
         # field 2
