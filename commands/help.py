@@ -9,6 +9,9 @@ class Help(commands.Cog):
     @commands.command(name="help")
     async def help(self, ctx):
         guild = ctx.guild
+
+        file = discord.File("/teamspace/studios/this_studio/firefly_bot/image/embed_divider.png", filename="embed_divider.png")
+
         embed = discord.Embed(
             title="List Commands",
             color=3158325,
@@ -32,7 +35,9 @@ class Help(commands.Cog):
                 icon_url=guild.icon.url if guild.icon else None
             )
 
-        await ctx.reply(embed=embed, mention_author=True)
+        embed.set_image(url="attachment://embed_divider.png")
+
+        await ctx.reply(embed=embed, file=file, mention_author=True)
 
 # Required setup function for extension loading
 async def setup(bot):
