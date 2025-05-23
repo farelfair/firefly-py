@@ -10,7 +10,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
         guild = ctx.guild
 
-        file = discord.File("/teamspace/studios/this_studio/firefly_bot/image/embed_divider.png", filename="embed_divider.png")
+        file = discord.File("firefly-py/image/embed_divider.png", filename="embed_divider.png")
 
         embed = discord.Embed(
             title="List Commands",
