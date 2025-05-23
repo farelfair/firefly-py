@@ -7,3 +7,9 @@
 ```
 DISCORD_TOKEN=paste in here
 ```
+
+# Requirements
+```
+pip install discord.py
+pip install python-dotenv
+```
