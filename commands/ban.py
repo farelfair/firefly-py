@@ -36,9 +36,19 @@ class Ban(commands.Cog):
     @ban.error
     async def ban_error(self, ctx, error):
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send("⛔ Kamu tidak punya izin untuk menggunakan command ini.")
+            embed = discord.Embed(
+                title="You don't have permission",
+                description="Member jgn sok gaya",
+                color=3158325,
+            )
+            await ctx.send(embed=embed)
         elif isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("⚠️ Format salah. Contoh: `?ban @user alasan`")
+            embed = discord.Embed(
+                title="⚠️ Wrong format",
+                description="Format salah gunakan `!ban @user alasan`",
+                color=3158325,
+            )
+            await ctx.send(embed=embed)
         elif isinstance(error, commands.BadArgument):
             await ctx.send("⚠️ User tidak valid. Mention user seperti ini: `@username`")
         else:
