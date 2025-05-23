@@ -10,7 +10,7 @@ class Hai(commands.Cog):
         embed = discord.Embed(
             title="Halo!",
             description="Hai saya Firefly, pembantu Anda. Apa yang harus saya lakukan?",
-            color=int("303135", 16)
+            color=3158325,
         )
         await ctx.reply(embed=embed, mention_author=True)
 
