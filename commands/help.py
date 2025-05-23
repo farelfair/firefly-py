@@ -20,6 +20,12 @@ class Help(commands.Cog):
             value="**!hai** - say hi for firefly\n**!help** - show list cmd (test)",
             inline=False
         )
+        # field 2
+        embed.add_field(
+            name="Atmin only",
+            value="**!ban** - ban PSHT hajar di tempat",
+            inline=False
+        )
         # footer
         embed.set_footer(
                 text=guild.name,
