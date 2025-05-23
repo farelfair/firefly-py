@@ -22,7 +22,7 @@ async def on_ready():
     
     activity = discord.Game(name="Firefly.gg | !help")
     await client.change_presence(status=discord.Status.online, activity=activity)
-    print("Custom activity sudah di-set!")
+    print("set activity")
 
 # Load commands from folder
 @client.event
