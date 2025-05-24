@@ -57,7 +57,7 @@ class Ban(commands.Cog):
             )
             await ctx.send(embed=embed)
         else:
-            await ctx.send(f"⚠️ Terjadi error: {error}")
+            await ctx.send(f"error detected: {error}")
 
 async def setup(bot):
     await bot.add_cog(Ban(bot))
