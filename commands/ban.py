@@ -45,7 +45,7 @@ class Ban(commands.Cog):
         elif isinstance(error, commands.MissingRequiredArgument):
             embed = discord.Embed(
                 title="⚠️ Wrong format",
-                description="Format salah gunakan `!ban @user alasan`",
+                description="Format salah, gunakan `!ban @user alasan`",
                 color=3158325,
             )
             await ctx.send(embed=embed)
