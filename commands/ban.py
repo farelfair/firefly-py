@@ -50,7 +50,12 @@ class Ban(commands.Cog):
             )
             await ctx.send(embed=embed)
         elif isinstance(error, commands.BadArgument):
-            await ctx.send("⚠️ User tidak valid. Mention user seperti ini: `@username`")
+            embed = discord.Embed(
+                title="No Valid",
+                description="User tidak valid, e.x @username",
+                color=3158325,
+            )
+            await ctx.send(embed=embed)
         else:
             await ctx.send(f"⚠️ Terjadi error: {error}")
 
