@@ -38,7 +38,7 @@ class Ban(commands.Cog):
         if isinstance(error, commands.MissingPermissions):
             embed = discord.Embed(
                 title="You don't have permission",
-                description="Member jgn sok gaya",
+                description="Nguwawor",
                 color=3158325,
             )
             await ctx.send(embed=embed)
