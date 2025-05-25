@@ -15,12 +15,12 @@ class Ban(commands.Cog):
                 description=f"{member.mention}",
                 color=3158325,
             )
-            embed.add_field(name="Alasan", value=reason, inline=False)
+            embed.add_field(name="Reason", value=reason, inline=False)
             embed.set_footer(text=f"Diban oleh: {ctx.author}", icon_url=ctx.author.avatar.url if ctx.author.avatar else None)
             await ctx.send(embed=embed)
         except discord.Forbidden:
             embed = discord.Embed(
-                title="Permission not allowed",
+                title="Something went wrong",
                 description="firefly does not have permission",
                 color=3158325,
             )
