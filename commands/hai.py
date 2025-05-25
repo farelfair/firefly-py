@@ -11,7 +11,7 @@ class Hai(commands.Cog):
         guild = ctx.guild
         embed = discord.Embed(
             title="Halo!",
-            description="Gunakan `!help` untuk saya membantu mu",
+            description="Hai saya firefly senang bisa melihatmu di sini, Semoga harimu menyenangkan! kalau kamu butuh bantuan tinggal ketik `!help` ya 😊",
             color=3158325,
             timestamp=datetime.utcnow()
             )
